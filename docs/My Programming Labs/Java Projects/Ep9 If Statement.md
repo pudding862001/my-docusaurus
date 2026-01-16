@@ -7,18 +7,6 @@ sidebar_position: 9
 
 ## Ep9 If Statement
 
-這章節進入了程式設計的靈魂：控制流程 (Control Flow)。透過 if 判斷式，你的程式不再只是從頭執行到尾，而是能根據條件「做決定」。
-
-這是為你準備的 ep9.md 內容，我特別強化了關於「效能」與「巢狀判斷」的說明：
-
-Episode 9: Control Flow with If Statements
-Markdown
-
----
-sidebar_label: 'Episode 9: If Statements'
-title: Java Control Flow - Making Decisions
----
-
 In this episode, we learn how to make our programs "think" and take different paths based on conditions using **If-Else statements**.
 
 ### Key Takeaways:
