@@ -5,11 +5,7 @@ sidebar_label: At Advantech
 description: Specialized in solution integration for industrial IoT applications.
 ---
 
----
-sidebar_position: 1
-title: Academic Roots
-sidebar_label: Academic Roots
----
+
 
 # My Academic Background
 

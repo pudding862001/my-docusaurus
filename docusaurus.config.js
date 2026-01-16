@@ -69,7 +69,7 @@ presets: [
         },
         items: [], 
       },
-      footer: {
+  /*    footer: {
         style: 'dark',
         links: [
           {
@@ -83,7 +83,7 @@ presets: [
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} William. Built with Docusaurus.`,
-      },
+      }, */
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
