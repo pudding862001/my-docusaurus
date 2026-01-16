@@ -8,9 +8,12 @@ slug: /
 # Welcome to William's Website
 
 
-## Getting Started
+## William Lin | Staff Product Engineer
+### Bridging Enterprise Edge Expertise with Cloud-Native Innovation
 
-* In this site, you will learn all the detail of William. Including his academic archievement, career path, core compatency and certifications. 
+* Welcome to my technical portfolio. This platform serves as a comprehensive showcase of my 10-year engineering journey, ranging from Enterprise Hardware Strategy at Lenovo to modern Cloud-Native Implementations. 
 
-* Please visit the sidebar to get the detail.
+* Dive into my career evolution, technical competencies, and ongoing cloud certifications.
+
+
 

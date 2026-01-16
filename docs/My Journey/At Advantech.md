@@ -5,29 +5,33 @@ sidebar_label: At Advantech
 description: Specialized in solution integration for industrial IoT applications.
 ---
 
+### Senior Solution Application Engineer | Taipei, Taiwan
+
+Apr. 2018 - Jun. 2022
+
+* **Customer Escalation Resolution**:  Served as the final escalation owner for **hybrid IIoT solutions** that combined **WebAccess/SCADA** and cloud services on **AWS**, **Azure**, and **Advantech WISE-PaaS**, resolving production issues across edge-to-cloud data paths.
+
+* **Solution & Architecture Consulting**: Provided architecture reviews and deployment guidance for cloud-connected systems, validating microservices architectures deployed on **Kubernetes clusters** across the Advantech cloud ecosystem
+
+* **Edge-to-Cloud Integration**: Delivered edge-to-cloud integration for industrial customers using **WebAccess/SCADA**, streaming on-prem data to **AWS**, **Azure** and **Advantech WISE-PaaS**.
 
 
-# My Academic Background
+* **Technical Enablement**: Established [**Advantech IIoT Academy**](https://academy.advantech.com/en/courses) with Advantech IT team, developing over **20 technical training modules** for global engineers and channel partners. [**Course Example**](https://academy.advantech.com/catalog/info/id:142)
 
-這是我求學時期的背景與重要里程碑。
+* **Role-Based Training Programs**: Architected a role-specific technical enablement framework, tailoring specialized curricula for Sales, FAE, and Regional support engineers
 
-## 🎓 學位資訊
+* **Product Manager - Advantech WISE-DataConnect:**
+  <ul style={{ marginTop: '-16px', lineHeight: '1.3' }}>
+    <li style={{ marginBottom: '2px' }}>
+      <span style={{ fontSize: '15px' }}>Designed the **UI flow** and **frontend interactions** for the Advantech WISE-DataConnect platform.</span>
+    </li>
+    <li style={{ marginBottom: '2px' }}>
+      <span style={{ fontSize: '15px' }}>Prepared **sales kits**, **go-to-market materials**, and user-facing content to support product launch initiatives.</span>
+    </li>
+    <li style={{ marginBottom: '2px' }}>
+      <span style={{ fontSize: '15px' }}>Authored **user manuals**, **online documentation**, and **training materials** to support customer adoption and onboarding.</span>
+    </li>
+  </ul>
 
-### **[大學名稱]** | [學位名稱，例如：資訊工程學系]
-**[起迄年份，例如：2011 - 2015]**
-
-* **主修課程：** 電腦網路、作業系統、資料結構與演算法。
-* **畢業論文/專題：** [這裡可以簡單寫你的專題題目]。
-* **榮譽/獎項：** 曾獲得 [某某獎項] 或 參與 [某某社團]。
-
----
-
-## 🛠 技能養成
-
-在學生時期，我打下了紮實的基礎：
-* **程式語言：** [例如：C, C++, Java]
-* **專業領域：** [例如：網路通訊、嵌入式系統]
-
-:::tip 學習心得
-這裡可以寫一段話，總結你學生時期的心得，或是這段經歷如何影響你後來的職涯選擇。
-:::
+  
+* **Key Achievement**: Achieved a **20%** reduction in total case resolution hours for certified seed engineers following their completion of specialized online curricula at Advantech IIoT Academy.

@@ -1,89 +1,52 @@
 ---
-sidebar_label: Azure
+title: Azure Administrator & Cloud Foundations
+sidebar_label: Azure Cloud Foundations
 sidebar_position: 5
+hide_title: true
 ---
 
-# Translate your site
+## Azure Cloud Foundations
 
-Let's translate `docs/intro.md` to French.
+Microsoft Azure is a continuously expanding set of cloud services to help your organization meet your business challenges. For a Staff Engineer, mastering Azure involves understanding its unique resource hierarchy and identity management (Entra ID).
 
-## Configure i18n
+---
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+### 1. Azure Resource Hierarchy
 
-```js title="docusaurus.config.js"
-export default {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
+Azure provides a four-level management hierarchy to organize resources effectively:
 
-## Translate a doc
+* **Management Groups:** Containers that help you manage access, policy, and compliance for multiple subscriptions.
+* **Subscriptions:** A logical unit of Azure services that is linked to an Azure account. Billing is managed at this level.
+* **Resource Groups:** A logical container into which Azure resources (like VMs, Web Apps) are deployed and managed.
+* **Resources:** Instances of services that you create, such as virtual machines, storage, or SQL databases.
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+---
 
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
+### 2. Azure Global Infrastructure
 
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
+* **Regions:** A set of data centers deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.
+* **Region Pairs:** Each Azure region is paired with another region within the same geography (at least 300 miles away) to ensure business continuity.
+* **Availability Zones:** Unique physical locations within an Azure region. Each zone is made up of one or more data centers equipped with independent power, cooling, and networking.
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+---
 
-## Start your localized site
+### 3. Core Azure Services
 
-Start your site on the French locale:
+| Category | Service | Description |
+| :--- | :--- | :--- |
+| **Compute** | **Virtual Machines (VM)** | On-demand, scalable computing resources (IaaS). |
+| **Storage** | **Blob Storage** | Object storage solution for the cloud, optimized for storing massive amounts of unstructured data. |
+| **Database** | **Azure SQL** | Managed, intelligent, and scalable relational database service. |
+| **Networking** | **Virtual Network (VNet)** | Enables Azure resources to securely communicate with each other, the internet, and on-premises networks. |
 
-```bash
-npm run start -- --locale fr
-```
+---
 
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
+### 4. Governance and Security
 
-:::caution
+* **Azure Policy:** Helps to enforce organizational standards and to assess compliance at-scale.
+* **Role-Based Access Control (RBAC):** Fine-grained access management for Azure resources, allowing you to grant only the amount of access that users need.
+* **Microsoft Entra ID (formerly Azure AD):** The cloud-based identity and access management service.
 
-In development, you can only use one locale at a time.
+---
 
-:::
-
-## Add a Locale Dropdown
-
-To navigate seamlessly across languages, add a locale dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The locale dropdown now appears in your navbar:
-
-![Locale Dropdown](./img/localeDropdown.png)
-
-## Build your localized site
-
-Build your site for a specific locale:
-
-```bash
-npm run build -- --locale fr
-```
-
-Or build your site to include all the locales at once:
-
-```bash
-npm run build
-```
+> **Staff Engineer Note:** Comparing **Azure VNet** with **AWS VPC** is essential for multi-cloud architecture. In Azure, the resource group model provides a very clean way to manage the lifecycle of an application's components. Based on my background at **Lenovo** and **Moxa**, implementing robust **RBAC** and **Azure Policies** is the foundation for maintaining security compliance in large-scale production environments, especially when integrating with Kubernetes (CKA) clusters.

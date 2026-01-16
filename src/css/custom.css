@@ -17,7 +17,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-
 .table-of-contents {
   display: none;
 }
@@ -25,6 +24,15 @@
 .col--9 {
   --ifm-col-width: 100% !important;
   max-width: 100% !important;
+}
+
+.card__footer {
+  display: none !important;
+}
+
+/* 確保連帶產生的加粗文字也被隱藏 */
+.card__footer b {
+  display: none !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -37,4 +45,28 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* 1. 調整所有文章的文字行高，讓閱讀更輕鬆 */
+.markdown p, 
+.markdown li {
+  line-height: 1.8 !important; /* 增加行與行之間的距離 */
+}
+
+/* 2. 增加列表項目 (li) 之間的垂直距離 */
+.markdown li {
+  margin-bottom: 8px !important; /* 讓每個打點之間不要太擠 */
+}
+
+/* 3. 針對巢狀列表（縮排後的項目）微調間距 */
+.markdown li > ul {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+/* 4. 標題與下方內容的間距 */
+.markdown h2, 
+.markdown h3 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem !important;
 }

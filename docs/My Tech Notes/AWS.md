@@ -1,89 +1,51 @@
 ---
-sidebar_label: AWS
+title: AWS Cloud Practitioner & Solutions Architect Foundations
+sidebar_label: AWS Cloud Foundations
 sidebar_position: 4
+hide_title: true
 ---
 
-# Translate your site
+## AWS Cloud Foundations
 
-Let's translate `docs/intro.md` to French.
+Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud platform. For a Staff Engineer, mastering AWS involves understanding how to architect highly available, scalable, and fault-tolerant systems.
 
-## Configure i18n
+---
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+### 1. AWS Global Infrastructure
 
-```js title="docusaurus.config.js"
-export default {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
+AWS serves over a million active customers in more than 190 countries.
 
-## Translate a doc
+* **Regions:** Physical locations around the world where AWS clusters data centers. Each Region is geographically isolated.
+* **Availability Zones (AZs):** One or more discrete data centers with redundant power, networking, and connectivity within an AWS Region.
+* **Edge Locations:** Sites that CloudFront (CDN) uses to deliver content to end users with low latency.
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+---
 
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
+### 2. Shared Responsibility Model
 
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
+Security and Compliance is a shared responsibility between AWS and the customer.
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+* **AWS Responsibility ("Security OF the Cloud"):** Protecting the infrastructure that runs all of the services offered in the AWS Cloud (Hardware, software, networking, and facilities).
+* **Customer Responsibility ("Security IN the Cloud"):** Management of the guest operating system, application software, and configuration of the AWS-provided security group firewall.
 
-## Start your localized site
+---
 
-Start your site on the French locale:
+### 3. Core AWS Services (The Big Four)
 
-```bash
-npm run start -- --locale fr
-```
+| Category | Service | Description |
+| :--- | :--- | :--- |
+| **Compute** | **EC2** | Virtual servers in the cloud (Elastic Compute Cloud). |
+| **Storage** | **S3** | Scalable object storage for data backup and archiving (Simple Storage Service). |
+| **Database** | **RDS** | Managed relational database service for MySQL, PostgreSQL, etc. |
+| **Networking** | **VPC** | Isolated cloud resources in a private virtual network. |
 
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
+---
 
-:::caution
+### 4. Scalability and Availability
 
-In development, you can only use one locale at a time.
+* **Elastic Load Balancing (ELB):** Automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances.
+* **Auto Scaling:** Automatically adds or removes compute resources to maintain performance and minimize cost.
 
-:::
+---
 
-## Add a Locale Dropdown
-
-To navigate seamlessly across languages, add a locale dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The locale dropdown now appears in your navbar:
-
-![Locale Dropdown](./img/localeDropdown.png)
-
-## Build your localized site
-
-Build your site for a specific locale:
-
-```bash
-npm run build -- --locale fr
-```
-
-Or build your site to include all the locales at once:
-
-```bash
-npm run build
-```
+> **Staff Engineer Note:** In our current roadmap for CKA and Azure certifications, comparing **AWS VPC** with **Azure VNet** is a key skill. While the terminology differs, the underlying principles of CIDR blocks, subnets, and routing tables remain consistent. From my experience at Lenovo and Advantech, leveraging AWS for high-performance computing requires a deep understanding of **IAM (Identity and Access Management)** to ensure the principle of least privilege is applied across all automated CI/CD pipelines.

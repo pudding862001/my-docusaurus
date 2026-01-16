@@ -10,8 +10,9 @@ description: Specialized in Meta-heuristics algorithms from NCTU & NTHU
 
 ## 🎓 College
 
-### **National Chiao Tung University** | Department of Transportation Technology and Management
-**[Sep. 2009 - Jun. 2013]**
+### **National Chiao Tung University** 
+### **Department of Transportation Technology and Management** 
+Sep. 2009 - Jun. 2013
 
 ### Core Courses: 
 * **Object-Oriented Programming:** Developed a strong foundation in programming using C++ and Visual Basic, focusing on core OOP principles.
@@ -27,8 +28,9 @@ description: Specialized in Meta-heuristics algorithms from NCTU & NTHU
 
 ## 🎓 Graduate
 
-### **National Tsing Hua University** | Department of Industrial Engineering and Engineering Management
-**[Sep. 2013 - Jun. 2015]**
+### **National Tsing Hua University** 
+### **Department of Industrial Engineering and Engineering Management**
+Sep. 2013 - Jun. 2015
 
 ### Core Courses: 
 * **Stochastic Processes:** Explored the mathematical modeling of systems that evolve over time with inherent randomness. Such as Markov Chains, Poisson Processes, and Queuing Theory.

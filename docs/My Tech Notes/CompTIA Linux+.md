@@ -1,89 +1,45 @@
 ---
-sidebar_label: CompTIA Linux+
+title: CompTIA Linux+ Core Fundamentals
+sidebar_label: CompTIA Linux+ Fundamentals
 sidebar_position: 2
+hide_title: true
 ---
 
-# Translate your site
+## CompTIA Linux+ Core Fundamentals (To be continue...)
 
-Let's translate `docs/intro.md` to French.
+The CompTIA Linux+ certification validates the competencies required of an early-career system administrator. For a Staff Engineer, mastering the Linux CLI and system architecture is essential for managing containerized environments and cloud-native workloads.
 
-## Configure i18n
+---
 
-Modify `docusaurus.config.js` to add support for the `fr` locale:
+### 1. Filesystem Hierarchy Standard (FHS)
 
-```js title="docusaurus.config.js"
-export default {
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
-};
-```
+Understanding where configuration and binary files reside is crucial for system troubleshooting and security auditing.
 
-## Translate a doc
+| Directory | Description |
+| :--- | :--- |
+| `/etc` | System-wide configuration files (e.g., `hosts`, `resolv.conf`). |
+| `/var` | Variable data files, such as logs (`/var/log`) and mail. |
+| `/bin` | Essential user command binaries (e.g., `ls`, `cp`). |
+| `/sbin` | Essential system binaries, usually for root (e.g., `ip`, `reboot`). |
+| `/proc` | Virtual filesystem providing process and kernel information. |
 
-Copy the `docs/intro.md` file to the `i18n/fr` folder:
+---
 
-```bash
-mkdir -p i18n/fr/docusaurus-plugin-content-docs/current/
+### 2. Permissions and Ownership
 
-cp docs/intro.md i18n/fr/docusaurus-plugin-content-docs/current/intro.md
-```
+Linux security is built on the foundation of user, group, and others (UGO) permissions.
 
-Translate `i18n/fr/docusaurus-plugin-content-docs/current/intro.md` in French.
+**Numeric Representation:**
+* **4**: Read (r)
+* **2**: Write (w)
+* **1**: Execute (x)
 
-## Start your localized site
+```bash title="Permission Management Examples"
+# Change ownership to 'william' and group 'admin'
+chown william:admin script.sh
 
-Start your site on the French locale:
+# Set permissions to rwxr-xr-x (755)
+chmod 755 script.sh
 
-```bash
-npm run start -- --locale fr
-```
-
-Your localized site is accessible at [http://localhost:3000/fr/](http://localhost:3000/fr/) and the `Getting Started` page is translated.
-
-:::caution
-
-In development, you can only use one locale at a time.
-
-:::
-
-## Add a Locale Dropdown
-
-To navigate seamlessly across languages, add a locale dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'localeDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The locale dropdown now appears in your navbar:
-
-![Locale Dropdown](./img/localeDropdown.png)
-
-## Build your localized site
-
-Build your site for a specific locale:
-
-```bash
-npm run build -- --locale fr
-```
-
-Or build your site to include all the locales at once:
-
-```bash
-npm run build
-```
+# Set Special Permissions (SUID)
+chmod u+s /usr/bin/executable_file

@@ -1,56 +1,39 @@
 ---
-sidebar_label: CCNA
+title: CCNA Networking Fundamentals
+sidebar_label: CCNA Basics
 sidebar_position: 1
+hide_title: true
 ---
 
-# Manage Docs Versions
+## CCNA Networking Fundamentals
 
-Docusaurus can manage multiple versions of your docs.
+Cisco Certified Network Associate (CCNA) covers a broad range of networking foundations. As a Staff Engineer, understanding the underlying network architecture is crucial for troubleshooting distributed systems and cloud infrastructure.
 
-## Create a docs version
+### The OSI Model (Open Systems Interconnection)
 
-Release a version 1.0 of your project:
+The OSI model is a conceptual framework used to understand network interactions in seven distinct layers:
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+* **Layer 7 - Application:** Interface for end-user processes (HTTP, FTP, DNS).
+* **Layer 6 - Presentation:** Data representation and encryption (SSL/TLS, JPEG).
+* **Layer 5 - Session:** Inter-host communication and session management.
+* **Layer 4 - Transport:** End-to-end connections and reliability (TCP, UDP).
+* **Layer 3 - Network:** Path determination and logical addressing (IP, ICMP, Routers).
+* **Layer 2 - Data Link:** Physical addressing and MAC access (Ethernet, Switches).
+* **Layer 1 - Physical:** Binary transmission over physical media (Cables, Hubs).
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+---
 
-Your docs now have 2 versions:
+### Core IP Addressing Concepts
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+Efficient IP management is the backbone of any scalable network.
 
-## Add a Version Dropdown
+```text
+IPv4 Addressing:
+- Total Bits: 32 bits (4 octets)
+- Format: Dotted-decimal (e.g., 192.168.1.1)
+- Classes: A (1-126), B (128-191), C (192-223)
 
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+Private IP Ranges (RFC 1918):
+- 10.0.0.0    - 10.255.255.255
+- 172.16.0.0  - 172.31.255.255
+- 192.168.0.0 - 192.168.255.255
