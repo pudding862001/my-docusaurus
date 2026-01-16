@@ -8,6 +8,10 @@ RUN npm run build
 
 FROM nginx:stable-alpine
 COPY --from=build-stage /app/build /usr/share/nginx/html
-RUN sed -i 's/listen  80;/listen 8080;/g' /etc/nginx/conf.d/default.conf
+
+RUN sed -i 's/listen[[:space:]]*80;/listen 8080;/g' /etc/nginx/conf.d/default.conf
+
+ENV PORT 8080
 EXPOSE 8080
+
 CMD ["nginx", "-g", "daemon off;"]
