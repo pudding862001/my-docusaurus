@@ -21,6 +21,11 @@
   display: none;
 }
 
+.katex-mathml {
+  display: none;
+}
+
+
 .col--9 {
   --ifm-col-width: 100% !important;
   max-width: 100% !important;
