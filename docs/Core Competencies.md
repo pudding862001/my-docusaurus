@@ -4,13 +4,12 @@ sidebar_label: My Core Competencies
 sidebar_position: 2
 pagination_next: null
 pagination_prev: null
-slug: /
 ---
 
 
 # My Core Competencies
 
-As a Staff Engineer with extensive experience at **Lenovo**, **Advantech**, and **Moxa**, my expertise lies at the intersection of Hardware Engineering, Hybrid Cloud Infrastructure, and Technical Leadership. I specialize in bridging the gap between complex hardware systems and modern cloud-native architectures.
+As a Staff Engineer with extensive experience at **Lenovo**, **Advantech**, and **Moxa**, my expertise lies at the intersection of **Hardware Engineering**, **Hybrid Cloud Infrastructure**, and **Technical Leadership**. I specialize in bridging the gap between complex hardware systems and modern cloud-native architectures.
 
 ---
 

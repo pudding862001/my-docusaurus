@@ -1,4 +1,6 @@
 ---
+title: Welcome to William's Website
+sidebar_label: Welcome to William's Website
 sidebar_position: 1
 pagination_next: null
 pagination_prev: null
