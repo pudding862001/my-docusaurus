@@ -18,7 +18,7 @@ RBAC is the mechanism that regulates access to computer or network resources bas
     * **ClusterRole**: Applied cluster-wide (non-namespaced resources like Nodes).
 2.  **RoleBinding / ClusterRoleBinding**: Defines **who** (User, Group, or ServiceAccount) is granted the permissions defined in the Role.
 
-### CKA Commands (Time Savers)
+### Exam Commands (Time Savers)
 * **Create a Role**:
     ```bash
     kubectl create role [role-name] --verb=get,list,watch --resource=pods,deployments
@@ -73,7 +73,7 @@ Kubernetes components communicate over TLS. As an admin, you may need to:
 
 ---
 
-## 5. CKA Exam Survival Tips: Security
+## 5. Tips: Security
 1.  **Check the Namespace**: RBAC is often namespace-specific. Always verify the `-n [namespace]` flag.
 2.  **Verify with `auth can-i`**: This is the fastest way to check if your RBAC configuration is correct without switching users.
 3.  **ClusterRole vs Role**: If a task asks to grant access to "all namespaces" or "nodes/PVs", you **must** use a `ClusterRole` and `ClusterRoleBinding`.

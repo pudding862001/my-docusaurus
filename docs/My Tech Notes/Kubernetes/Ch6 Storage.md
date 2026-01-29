@@ -34,7 +34,7 @@ A cluster-wide resource (like a Node) provisioned by an administrator.
 ### Persistent Volume Claim (PVC)
 A request for storage by a user. It looks for a PV that meets its requirements (size and access mode).
 
-### CKA Workflow:
+### Workflow:
 1.  **Create PV**: Define the capacity and storage type (NFS, HostPath, etc.).
 2.  **Create PVC**: Request a specific size (e.g., 1Gi).
 3.  **Mount in Pod**: Reference the PVC by name in the `volumes` section of the Pod spec.
@@ -83,7 +83,7 @@ spec:
 
 ---
 
-## 5. CKA Survival Tips: Storage
+## 5. Tips: Storage
 1.  **Check PV Status**: A PVC will stay `Pending` if it cannot find a matching PV. Check `kubectl get pv` to ensure a PV is `Available`.
 2.  **Matching Access Modes**: The PVC access mode **must** be a subset of the PV's access modes.
 3.  **Base64 Encoding**: When creating a Secret via YAML, remember the values must be base64 encoded:

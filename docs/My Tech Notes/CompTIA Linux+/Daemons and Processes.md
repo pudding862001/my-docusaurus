@@ -1,6 +1,6 @@
 ---
 title: Daemons and Processes
-sidebar_label: Daemons & Processes
+sidebar_label: Daemons and Processes
 sidebar_position: 7
 ---
 

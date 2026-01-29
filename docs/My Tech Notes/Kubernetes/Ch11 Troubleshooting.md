@@ -81,7 +81,7 @@ If Pods can't communicate:
 
 ---
 
-## 5. CKA Exam Survival Tips: Troubleshooting
+## 5. Tips: Troubleshooting
 1.  **Don't Panic**: If `kubectl` doesn't work, SSH into the master node and check if the API server container is running.
 2.  **Kubelet is Key**: Most "Node NotReady" issues are fixed by starting or enabling the kubelet (`systemctl enable --now kubelet`).
 3.  **Typos in Manifests**: If you edit a static pod manifest and it disappears, check the file for indentation errors.

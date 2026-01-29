@@ -89,7 +89,7 @@ In a production or HA environment:
 
 ---
 
-## 5. CKA Exam Survival Tips: Maintenance
+## 5. Tips: Maintenance
 1.  **Path Precision**: In the ETCD restore task, double-check the file paths for the `--cacert`, `--cert`, and `--key`. They are usually found in the `etcd.yaml` manifest.
 2.  **Order Matters**: Always upgrade the **Master** node before the **Worker** nodes.
 3.  **The "Dry Run" of Upgrades**: Always run `kubeadm upgrade plan` first to see if there are any version mismatches.

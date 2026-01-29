@@ -25,7 +25,7 @@ A Service provides a stable IP address and DNS name for a set of Pods, acting as
     * Exposes the Service externally using a cloud provider's load balancer.
     * Automatically creates a NodePort and ClusterIP.
 
-### CKA Command Shortcuts
+### Exam Command Shortcuts
 * **Expose a Deployment quickly**:
     ```bash
     kubectl expose deployment [deploy-name] --port=80 --target-port=8080 --type=NodePort
@@ -95,7 +95,7 @@ Networking efficiency is often tied to resource allocation:
 
 ---
 
-## 6. CKA Exam Survival Tips: Networking
+## 6. Tips: Networking
 1.  **Label Selectors**: 90% of Service issues are caused by mismatched labels. Always verify that `service.spec.selector` matches `pod.metadata.labels`.
 2.  **Target Port vs. Port**:
     * `port`: The port exposed by the Service.

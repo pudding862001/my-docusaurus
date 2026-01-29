@@ -1,6 +1,6 @@
 ---
 title: Linux Storage and File Systems
-sidebar_label: Storage & File Systems
+sidebar_label: Storage and File Systems
 sidebar_position: 4
 ---
 

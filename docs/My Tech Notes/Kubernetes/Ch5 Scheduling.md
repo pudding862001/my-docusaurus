@@ -103,7 +103,7 @@ spec:
 
 ---
 
-## 6. CKA Exam Tips
+## 6. Tips
 * **Identify Labels:** Use `kubectl get nodes --show-labels` to verify your target nodes.
 * **Troubleshooting Pending Pods:** If a Pod is stuck in `Pending`, check `kubectl describe pod [pod-name]`. It usually indicates a scheduling failure due to Taints or Affinity mismatches.
 * **Static Pods:** These are managed directly by the Kubelet, not the Scheduler. You can find their manifests in `/etc/kubernetes/manifests` on the worker node.

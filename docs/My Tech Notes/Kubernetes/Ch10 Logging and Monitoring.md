@@ -89,7 +89,7 @@ When a Pod is stuck in `CrashLoopBackOff`:
 
 ---
 
-## 6. CKA Exam Survival Tips
+## 6. Tips
 1.  **JsonPath Mastery**: During the exam, you might be asked to "Save the names of all nodes to a file". JsonPath is the fastest way to do this.
 2.  **Container Context**: In multi-container Pods, forgetting the `-c` flag is a common mistake. If the Pod has an InitContainer, you can also check its logs specifically.
 3.  **The `-A` Flag**: Remember to use `kubectl get pods -A` if you can't find the Pod you're looking for; it might be in a different namespace.

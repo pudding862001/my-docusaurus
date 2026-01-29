@@ -1,6 +1,6 @@
 ---
 title: Shells, Variables, and Configuration Files
-sidebar_label: Shells & Variables
+sidebar_label: Shells and Variables
 sidebar_position: 10
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: Security Threats & Cryptography
-sidebar_label: Security & Crypto
+title: Security Threats and Cryptography
+sidebar_label: Security and Crypto
 sidebar_position: 11
 ---
 

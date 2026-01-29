@@ -52,7 +52,7 @@ A Deployment provides declarative updates for Pods and ReplicaSets.
 
 ---
 
-## 4. CKA Practice Highlights
+## 4. Tips
 1.  **Alias `k`:** Use `alias k=kubectl` to save time.
 2.  **Dry Run:** Always use `--dry-run=client -o yaml`.
 3.  **Rollout Restart:**

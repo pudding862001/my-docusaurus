@@ -1,6 +1,6 @@
 ---
 title: Firewalls and Monitoring
-sidebar_label: Firewalls & Monitoring
+sidebar_label: Firewalls and Monitoring
 sidebar_position: 13
 ---
 
