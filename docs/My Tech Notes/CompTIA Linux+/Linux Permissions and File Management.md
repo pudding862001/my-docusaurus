@@ -1,6 +1,6 @@
 ---
 title: Linux Permissions Management
-sidebar_label: Ep 15 Permissions Management
+sidebar_label: Permissions Management
 sidebar_position: 15
 ---
 

@@ -5,7 +5,7 @@ sidebar_position: 5
 hide_title: true
 ---
 
-## Azure Cloud Foundations
+## Azure Cloud Foundations  (To be continue...)
 
 Microsoft Azure is a continuously expanding set of cloud services to help your organization meet your business challenges. For a Staff Engineer, mastering Azure involves understanding its unique resource hierarchy and identity management (Entra ID).
 

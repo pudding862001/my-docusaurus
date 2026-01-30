@@ -5,7 +5,7 @@ sidebar_position: 4
 hide_title: true
 ---
 
-## AWS Cloud Foundations
+## AWS Cloud Foundations (To be continue...)
 
 Amazon Web Services (AWS) is the world's most comprehensive and broadly adopted cloud platform. For a Staff Engineer, mastering AWS involves understanding how to architect highly available, scalable, and fault-tolerant systems.
 
