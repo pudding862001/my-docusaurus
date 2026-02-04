@@ -17,7 +17,7 @@ As a Staff Engineer with extensive experience at **Lenovo**, **Advantech**, and 
 *Orchestrating scalable, resilient environments across public and private clouds.*
 
 * **Cloud Platforms:** Proficient in architecting and managing solutions on **AWS** (Solutions Architect Associate level) and **Azure** (AZ-104 Administrator level).
-* **Containerization:** Deep focus on **Kubernetes (CKA in progress)** and **Docker** for container orchestration and microservices deployment.
+* **Containerization:** Deep focus on **Kubernetes (CKA certified)** and **Docker** for container orchestration and microservices deployment.
 * **Virtualization:** Hands-on expertise in **VMware vSphere**, **Windows Hyper-V**, and **Enterprise Linux (RHEL/Ubuntu)** environments.
 * **Hybrid Management:** Designing seamless integration between on-premises data centers and public cloud providers.
 
