@@ -61,4 +61,4 @@ As a Staff Engineer with extensive experience at **Lenovo**, **Advantech**, and 
 | **Database** | MongoDB, PostgreSQL, MSSQL, MySQL |
 :::
 
-> **Career Vision:** Currently leveraging my **Staff Engineer** background to pioneer **Cloud-Native** transformations, with a focus on **Kubernetes (CKA)** certification in early 2026 to lead the next wave of Hybrid Cloud innovation.
+> **Career Vision:** Currently leveraging my **Staff Engineer** background to pioneer **Cloud-Native** transformations, with **Kubernetes (CKA)** certification to lead the next wave of Hybrid Cloud innovation.
