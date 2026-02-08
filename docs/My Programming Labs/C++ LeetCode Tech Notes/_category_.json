@@ -1,8 +1,8 @@
 {
-  "label": "C++ LeetCode Tech Notes",
+  "label": "LeetCode Tech Notes",
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Here are my Java development projects and technical deep dives."
+    "description": "Here are my simple notes and code for LeetCode problems"
   }
 }
