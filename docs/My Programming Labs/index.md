@@ -49,7 +49,7 @@ import Link from '@docusaurus/Link';
 
   {/* 3. LeetCode Tech Notes */}
   <div className="col col--6 margin-bottom--lg">
-    <Link className="card" to="/category/c-leetcode-tech-notes" style={{ height: '100%', textDecoration: 'none', border: '1px solid #e3e3e3', borderRadius: '8px', transition: 'transform 0.2s' }}>
+    <Link className="card" to="/category/leetcode-tech-notes" style={{ height: '100%', textDecoration: 'none', border: '1px solid #e3e3e3', borderRadius: '8px', transition: 'transform 0.2s' }}>
       <div className="card__body" style={{ padding: '24px' }}>
         <h3 style={{ marginBottom: '12px', display: 'flex', alignItems: 'center' }}>🧠 LeetCode Tech Notes</h3>
         <p style={{ fontSize: '14.5px', color: '#444', lineHeight: '1.6', marginBottom: '15px' }}>
