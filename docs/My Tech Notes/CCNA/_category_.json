@@ -1,8 +1,9 @@
 {
   "label": "CCNA Basics",
   "position": 1,
+  "description": "Networking & infrastructure notes since 2022",
   "link": {
     "type": "generated-index",
-    "description": "Here are my study notes for the CCNA certification since 2022."
+    "description": "Here are my study notes for the CCNA exam since 2022."
   }
 }

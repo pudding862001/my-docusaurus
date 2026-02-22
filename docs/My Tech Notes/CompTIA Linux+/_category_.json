@@ -1,8 +1,9 @@
 {
   "label": "CompTIA Linux+ Basics",
   "position": 2,
+  "description": "Linux administration & tech notes since 2015",
   "link": {
     "type": "generated-index",
-    "description": "Here are my study notes for the CompTIA Linux+ since 2024"
+    "description": "Here are my Linux hands on notes for the CompTIA Linux+ certificate."
   }
 }

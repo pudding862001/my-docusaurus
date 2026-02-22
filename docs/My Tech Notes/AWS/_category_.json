@@ -1,8 +1,9 @@
 {
   "label": "AWS Cloud Foundations",
   "position": 4,
+  "description": "Discover my AWS hands on & learning notes since 2016",
   "link": {
     "type": "generated-index",
-    "description": "Here are my AWS tech notes to pass the AWS-SSA-C03 Exam since 2025."
+    "description": "Here are my AWS tech notes based on my AWS hands on experience and self learning since 2016."
   }
 }

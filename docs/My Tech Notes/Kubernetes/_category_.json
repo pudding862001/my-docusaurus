@@ -1,6 +1,7 @@
 {
   "label": "Kubernetes",
   "position": 3,
+  "description": "Explore my Kubernetes learning notes since 2019",
   "link": {
     "type": "generated-index",
     "description": "Explore my Kubernetes knowledge fundations learning notes since 2019"

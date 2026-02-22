@@ -2,10 +2,11 @@
 title: Certified Kubernetes Administrator (CKA)
 sidebar_label: Kubernetes CKA
 sidebar_position: 1
+description: View my CKA certificate
 ---
 
-![My CKA Score](/img/cka-result.png)
 ![My CKA Certificate](/img/cka-certificate.png)
+![My CKA Score](/img/cka-result.png)
 
 ### **Exam Tips:** 
 

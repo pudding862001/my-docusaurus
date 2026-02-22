@@ -2,7 +2,7 @@
 sidebar_position: 3
 title: Advantech
 sidebar_label: At Advantech
-description: Specialized in solution integration for industrial IoT applications.
+description: Specialized in solution integration for industrial IoT applications
 ---
 
 ### Senior Solution Application Engineer | Taipei, Taiwan
