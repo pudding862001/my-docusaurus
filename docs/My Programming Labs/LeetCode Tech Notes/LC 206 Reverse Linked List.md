@@ -1,11 +1,12 @@
 ---
-title: LC 
-sidebar_label: LC 
-sidebar_position: 21
+title: LC 206 Reverse Linked List
+sidebar_label: LC 206 Reverse Linked List
+sidebar_position: 17
 hide_title: true
 ---
 
-## Given the head of a singly linked list, reverse the list, and return the reversed list.
+## LC 206 Reverse Linked List
+### Given the head of a singly linked list, reverse the list, and return the reversed list.
 
 * Input: head = [1,2,3,4,5]
 * Output: [5,4,3,2,1]
