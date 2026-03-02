@@ -1,38 +1,55 @@
 ---
-title: LC 
+title: LC
 sidebar_label: LC 
-sidebar_position: 21
+sidebar_position: 25
 hide_title: true
 ---
 
-## Given the head of a singly linked list, reverse the list, and return the reversed list.
+## LC 
 
-* Input: head = [1,2,3,4,5]
-* Output: [5,4,3,2,1]
+### You are given an array of CPU tasks, each labeled with a letter from A to Z, and a number n. 
+### Each CPU interval can be idle or allow the completion of one task. 
+
+* Example:
+* Input: tasks = ["A","A","A","B","B","B"], n = 2
+* Output: 8
+* Explanation: A possible sequence is: A -> B -> idle -> A -> B -> idle -> A -> B.
+
+
+Solution 1: Use heap to solve the issue by calculating time
 
 ```python
 
-# Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+import heapq
+from collections import Counter, deque
 class Solution:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
-        if head is None:
-            return
+    def leastInterval(self, tasks: List[str], n: int) -> int:
+        d = Counter(tasks)
+        max_list = d.most_common(1)
+        mostT, mostC = max_list[0]
+        worklist = []
+        for t, c in d.items():
+            worklist.append((-c, t))
+        heapq.heapify(worklist)
 
-        curr = head
-        prev = None
+        time = 0
+        Tlen = len(tasks)
+        jail = deque()
+        ans = []
+        while worklist or jail:
+            time += 1
 
-        while curr is not None:
-            temp = curr.next
-            curr.next = prev
-            prev = curr
-            curr = temp
-            
-        
-        return prev
+            if jail and jail[0][1] == time:
+                newcount, newtime, newtask = jail.popleft()
+                heapq.heappush(worklist, (newcount, newtask))
+
+            if worklist:
+                count, task = heapq.heappop(worklist)
+                count += 1
+
+                if count < 0:
+                    jail.append((count, time + n + 1, task))
+
+        return time
 
 ```

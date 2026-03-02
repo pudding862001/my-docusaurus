@@ -1,15 +1,16 @@
 ---
-title: LC
-sidebar_label: LC 
+title: LC 621 Task Scheduler
+sidebar_label: LC 621 Task Scheduler
 sidebar_position: 25
 hide_title: true
 ---
 
-## LC 
+## LC 621 Task Scheduler
 
 ### You are given an array of CPU tasks, each labeled with a letter from A to Z, and a number n. 
 ### Each CPU interval can be idle or allow the completion of one task. 
-
+### Tasks can be completed in any order, but there's a constraint: there has to be a gap of at least n intervals between two tasks with the same label.
+### Return the minimum number of CPU intervals required to complete all tasks.
 * Example:
 * Input: tasks = ["A","A","A","B","B","B"], n = 2
 * Output: 8
