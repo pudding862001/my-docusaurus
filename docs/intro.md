@@ -18,4 +18,4 @@ slug: /
 * Dive into my career evolution, technical competencies, and ongoing cloud certifications.
 
 
-![William's photo](./my-photo.png)
+![William's photo](./my-photo.jpg)
