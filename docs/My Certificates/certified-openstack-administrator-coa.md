@@ -5,4 +5,4 @@ sidebar_position: 4
 slug: certified-openstack-administrator-coa
 ---
 
-## To be continue...
+![My COA Certificate](/img/coa-certificate.png)
